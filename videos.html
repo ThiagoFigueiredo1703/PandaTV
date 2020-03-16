@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>	 
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/orlando.css">
+	
+	<body>
+		<header>
+			<div class="container pull-left">
+				<img id="logotipo" src="img/panda-logo.png" alt="Logotipo">	
+			</div>
+
+			<div class="container">
+				<div class="text-center">
+					<nav id="menu">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="videos.html">HISTÓRICO</a></li>
+							<li><a href="#">INSCRIÇÕES</a></li>
+							<li><a href="#">BIBLIOTECA</a></li>
+							<li><a href="formulario.html">CADASTRAR-SE</a></li>
+							<li><a href="#">ENTRAR</a></li>
+							<li class="search">
+								<div class="input-group">
+								<input type="search" placeholder="PESQUISAR" id="input-search">
+								<span class="input-group-btn">
+								<button type="button"><i class="fa fa-search"></i></button>
+								</span>
+								</div>
+							</li>
+
+						</ul>
+					</nav>	
+				</div>	
+			</div>
+		</header>
+
+		<section>
+			<div id="call-to-action">
+				<div class="container">
+					<div class="text-center">
+						<h2>Histórico</h2>
+						<hr>						
+					</div>
+					<video poster="posters/Terminator.jpg" controls>
+                    <source src="trailers/Terminator.mp4">   
+                    </video>
+                    <video poster="posters/Sonic.jpg" controls>
+                    <source src="trailers/Sonic.mp4">   
+                    </video>
+                    <video poster="posters/Alita.jpg" controls>
+                    <source src="trailers/Alita.mp4">   
+                    </video>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="row row-cinza-claro">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2 text-center">
+							<img class="logotipo" src="img/Panda-logo.png" alt="Logotipo">							
+						</div>
+					<div class="col-md-10">
+						<div class="row row-cols">
+							<div class="col-md-4 col-popular-post">
+								<h4>Configurações</h4>
+								<ul class="list-unstyled">
+									<li>
+									<h5>Configurações de conta</h5>
+									<time>January 01, 2016</time>
+									</li>
+
+									<li>
+									<h5>PandaTV Premium</h5>
+									<time>January 01, 2016</time>
+									</li>
+								</ul>					
+							</div> <!-- Essa div fecha col-popular-post. -->
+
+							<div class="col-md-4 col-get-in-touch">
+								<h4>Informações</h4>
+
+								<address>
+								<i class="fa fa-map-marker"></i><span>Contato do Administrador<br><span>
+								</address>
+
+								<p><a href="tel:1855ORCITY"> <i class="fa fa-phone"> </i>(51) 983131123</a></p>
+								<ul class="list-unstyled list-socials">
+									<li>
+										<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+									</li>
+
+									<li>
+										<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+									</li>
+
+									<li>
+										<a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+									</li>
+
+									<li>
+										<a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+									</li>
+								</ul>
+	
+							</div>				
+						</div>
+					</div>	
+				</div>
+			</div>
+			</div>
+			<div class="row-cinza-escuro">
+				<div class="container">
+					<p class="pull-left">
+						Copright PandaTV 2019. All rights reserved.
+					</p>	
+					<p class="pull-right text-roxo">Created by Gear Code</p>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#logotipo").on("mouseover",function(){
+					$("#banner h1").addClass("efeito");
+				}).on("mouseout",function(){
+					$("#banner h1").removeClass("efeito");
+				});	
+				$("#input-search").on("focus",function(){
+					$("li.search").addClass("ativo");
+				}).on("blur",function(){
+					$("li.search").removeClass("ativo");
+				}); 
+				$(".thumbnails").owlCarousel({
+					item : 4
+				});		
+			});
+		</script>
+	</body>
+</html>	

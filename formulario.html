@@ -1,0 +1,135 @@
+<!DOCTYPE html>    
+<html>
+	<head>	 
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/owl.carousel/owl-carousel/owl.carousel.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/orlando.css">
+	</head>
+	<body>	
+		<header>
+			<div class="container pull-left">
+				<img id="logotipo" src="img/panda-logo.png" alt="Logotipo">	
+			</div>
+
+			<div class="container">
+				<div class="text-center">
+					<nav id="menu">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="videos.html">HISTÓRICO</a></li>
+							<li><a href="#">INSCRIÇÕES</a></li>
+							<li><a href="#">BIBLIOTECA</a></li>
+							<li><a href="formulario.html">CADASTRAR-SE</a></li>
+							<li><a href="#">ENTRAR</a></li>
+							<li class="search">
+								<div class="input-group">
+								<input type="search" placeholder="PESQUISAR" id="input-search">
+								<span class="input-group-btn">
+								<button type="button"><i class="fa fa-search"></i></button>
+								</span>
+								</div>
+							</li>
+
+						</ul>
+					</nav>	
+				</div>	
+			</div>
+		</header>
+		<section>
+			<form method="POST" action="form.php">
+				<div class="form-group">
+					<label for="nome">Nome de Usuário:</label>
+					<input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome." required autofocus tabindex="1" disable>
+				</div>
+				<div class="form-group">
+					<label for="email">E-mail:</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="seu@email.com.br" required tabindex="2" >
+				</div>
+				<div class="form-group">
+					<label for="nascimento">Nascimento:</label>
+					<input type="date" name="nascimento" id="nascimento" class="form-control" required min="2019-01-01" max="2019-01-15">
+				</div>
+				<input type="hidden" name="id" value="1">
+				<div class="form-group">
+					<label for="senha">Senha:</label>
+					<input type="password" name="senha" id="senha" class="form-control">
+				</div>
+				<div>
+					<button type="submit" class="btn btn-primary">Cadastrar</button>
+				</div>
+			</form>
+	    </section>
+				<footer>
+			<div class="row row-cinza-claro">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2 text-center">
+							<img class="logotipo" src="img/panda-logo.png" alt="Logotipo">							
+						</div>
+					<div class="col-md-10">
+						<div class="row row-cols">
+							<div class="col-md-4 col-popular-post">
+								<h4>Configurações</h4>
+								<ul class="list-unstyled">
+									<li>
+									<h5>Configurações de conta</h5>
+									<time>January 01, 2016</time>
+									</li>
+
+									<li>
+									<h5>PandaTube Premium</h5>
+									<time>January 01, 2016</time>
+									</li>
+								</ul>					
+							</div> <!-- Essa div fecha col-popular-post. -->
+
+							<div class="col-md-4 col-get-in-touch">
+								<h4>Informações</h4>
+
+								<address>
+								<i class="fa fa-map-marker"></i><span>Contato do Administrador</span>
+								</address>
+
+								<p><a href="tel:1855ORCITY"> <i class="fa fa-phone"> </i>(51) 983131123</a></p>
+								<ul class="list-unstyled list-socials">
+									<li>
+										<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+									</li>
+
+									<li>
+										<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+									</li>
+
+									<li>
+										<a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+									</li>
+
+									<li>
+										<a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+									</li>
+								</ul>
+	
+							</div>				
+						</div>
+					</div>	
+				</div>
+			</div>
+			</div>
+			<div class="row-cinza-escuro">
+				<div class="container">
+					<p class="pull-left">Copright PandaTV 2019. All rights reserved.</p>	
+					<p class="pull-right text-roxo">Created by Gear Code Project</p>
+				</div>
+			</div>
+		</footer>
+			
+
+		<script type="text/javascript"  src="bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>

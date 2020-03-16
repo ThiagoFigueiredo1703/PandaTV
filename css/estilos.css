@@ -1,0 +1,41 @@
+body{
+    background-color: #000;
+}
+.white{
+    background-color: #fff;
+}
+
+.rodape{
+    background-color: #222;
+    color: #eee;
+    padding: 50px;
+}
+.filmes{
+    padding: 20px 0 50px 20px;
+}
+.filmes video{
+    width: 340px;
+    height: 240px;
+    margin-right: 25px;
+}
+.flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+video:nth-child(3),video:nth-child(6),video:nth-child(9){
+    margin-right: 0;
+}
+.titulo h1{
+    color: #36f;
+    padding-top: 30px;
+    font-weight: 600;
+    font-size: 52px;
+}
+.titulo h2{
+    font-size: 24px;
+    color: #000;
+}
+
+header #menu{
+    margin-top: 80px;
+}
